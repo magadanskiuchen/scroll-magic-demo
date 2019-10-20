@@ -40,10 +40,16 @@ img {
 	font-size: 64px;
 }
 
+.screen__title:not(.intro__title) {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .content {
 	display: flex;
 	max-width: 60vw;
-	margin: 0 auto 3em;
+	margin: 4em auto;
 	padding: 5em;
 	background: #FFF;
 }
