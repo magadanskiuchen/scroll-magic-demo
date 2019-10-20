@@ -22,4 +22,12 @@ screens.forEach(screen => {
 	new ScrollMagic.Scene({ triggerElement: screen, triggerHook: 0.55, duration: 90 * vh })
 		.setTween(new TweenLite.fromTo(heading, 1, { x: '-100%', y: 0 }, { x: '100%', y: 0 }))
 		.addTo(controller);
+		
+	new ScrollMagic.Scene({ triggerElement: screen, triggerHook: 0.9, duration: 50 * vh })
+		.setTween(new TweenLite.fromTo(screen, 1, { opacity: 0 }, { opacity: 1, ease: Power3.easeInOut }))
+		.addTo(controller);
+	
+	new ScrollMagic.Scene({ triggerElement: screen, triggerHook: 0.75, duration: 50 * vh })
+		.setTween(new TweenLite.to(screen.querySelector('.content__image'), 1, { y: 0, ease: Power1.easeOut }))
+		.addTo(controller);
 });

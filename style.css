@@ -58,6 +58,7 @@ img {
 	width: 33%;
 	height: auto;
 	margin-right: 3em;
+	transform: translateY(30%);
 }
 
 .screen--html .content__image img {
