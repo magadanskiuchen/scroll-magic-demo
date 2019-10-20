@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body { width: 100%; }
+
+body {
+	background: #E0E0E0;
+	color: #333;
+	font: normal 18px/1.35 Arial, Helvetica, sans-seerif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.screen {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.screen__title {
+	padding: 1em 0;
+	font-weight: normal;
+	font-size: 48px;
+	text-align: center;
+}
+
+.screen--intro {
+	min-height: 50vh;
+}
+
+.intro__title {
+	font-size: 64px;
+}
+
+.content {
+	display: flex;
+	max-width: 60vw;
+	margin: 0 auto 3em;
+	padding: 5em;
+	background: #FFF;
+}
+
+.content__image {
+	width: 33%;
+	height: auto;
+	margin-right: 3em;
+}
+
+.screen--html .content__image img {
+	max-width: none;
+	margin-left: -80px; /* SVG contains blank space on the sides, so we expand it to appear as big as the rest of the images */
+	margin-right: -80px;
+}
+
+.content__description {
+	flex-basis: 67%;
+	flex-shrink: 1;
+}
+
+.content__description p {
+	margin-bottom: 2em;
+}
